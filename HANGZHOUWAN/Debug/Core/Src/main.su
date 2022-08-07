@@ -1,0 +1,11 @@
+main.c:71:5:main	24	static
+main.c:129:6:SystemClock_Config	72	static
+main.c:167:13:MX_NVIC_Init	8	static
+main.c:185:13:MX_USART1_UART_Init	8	static
+main.c:218:13:MX_USART2_UART_Init	8	static
+main.c:251:13:MX_USART3_UART_Init	8	static
+main.c:282:13:MX_DMA_Init	16	static
+main.c:303:13:MX_GPIO_Init	24	static
+main.c:315:6:USAR_UART_IDLECallback	40	static
+main.c:392:6:distance_data_process	40	static
+main.c:440:6:Error_Handler	4	static,ignoring_inline_asm

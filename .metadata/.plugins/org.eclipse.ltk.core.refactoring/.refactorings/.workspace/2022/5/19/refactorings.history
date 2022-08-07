@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;AS5048MagEncoder&apos;" deleteContents="false" description="Delete resource &apos;AS5048MagEncoder&apos;" element1="/AS5048MagEncoder" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1651490301206"/>
+</session>

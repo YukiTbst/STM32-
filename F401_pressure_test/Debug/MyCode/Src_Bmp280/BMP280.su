@@ -1,0 +1,6 @@
+BMP280.cpp:3:6:void Bmp280::pressure_resolution_set(uint8_t)	32	static
+BMP280.cpp:30:6:void Bmp280::temperature_resolution_set(uint8_t)	32	static
+BMP280.cpp:57:6:void Bmp280::filter_set(uint8_t)	32	static
+BMP280.cpp:84:6:void Bmp280::pressure_and_temperature_read(double*)	104	static
+BMP280.cpp:115:1:Bmp280::Bmp280(SPI_HandleTypeDef*, GPIO_TypeDef*, uint32_t, uint8_t, uint8_t, uint8_t)	96	static
+BMP280.cpp:144:1:Bmp280::Bmp280(SPI_HandleTypeDef*, GPIO_TypeDef*, uint32_t)	96	static

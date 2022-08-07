@@ -1,0 +1,10 @@
+19:59:08 **** Build of configuration Debug for project HANGZHOUWAN ****
+make -j6 all 
+arm-none-eabi-size   HANGZHOUWAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11256	     28	   2468	  13752	   35b8	HANGZHOUWAN.elf
+Finished building: default.size.stdout
+ 
+
+19:59:08 Build Finished. 0 errors, 0 warnings. (took 634ms)
+

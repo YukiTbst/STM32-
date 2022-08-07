@@ -1,0 +1,7 @@
+20:06:04 **** Incremental Build of configuration Debug for project F401_pressure_test ****
+make -j6 all 
+make: *** No rule to make target '../Core/Src/main.cpp', needed by 'Core/Src/main.o'.  Stop.
+"make -j6 all" terminated with exit code 2. Build might be incomplete.
+
+20:06:04 Build Failed. 1 errors, 0 warnings. (took 429ms)
+

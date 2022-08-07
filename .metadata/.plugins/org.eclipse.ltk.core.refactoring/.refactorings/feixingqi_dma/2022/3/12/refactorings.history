@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;feixingqi_dma/feixingqi.ioc&apos; to &apos;feixingqi_dma.ioc&apos;" description="Rename resource &apos;feixingqi.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="feixingqi.ioc" name="feixingqi_dma.ioc" stamp="1647691374251" updateReferences="true"/>
+</session>

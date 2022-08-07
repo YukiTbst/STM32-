@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HANGZHOUWAN Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F410_TEST Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:MPU9250_TEST Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F407_PID Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F401_pressure_test Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:C6T6_TEST Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CPP_F401_PRESSURE_TEST Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RASPBERRY_PI_SPEED_TEST Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:decoder Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:feixingqi_dma Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HANGZHOUWAN_NODMA Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:AS5048MagEncoder Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:feixingqi Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:AS5048MagEncoder\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:AS5048MagEncoder\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:C6T6_TEST\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:C6T6_TEST\ Debug/activeLaunchTarget=null\:---

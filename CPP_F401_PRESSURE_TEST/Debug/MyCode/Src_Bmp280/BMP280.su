@@ -1,0 +1,5 @@
+BMP280.c:3:6:pressure_resolution_set	32	static
+BMP280.c:33:6:temperature_resolution_set	32	static
+BMP280.c:63:6:filter_set	32	static
+BMP280.c:93:6:pressure_and_temperature_read	112	static
+BMP280.c:126:6:Bmp280_init	96	static

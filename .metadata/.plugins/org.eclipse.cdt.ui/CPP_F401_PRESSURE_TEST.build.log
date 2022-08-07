@@ -1,0 +1,20 @@
+12:02:27 **** Incremental Build of configuration Debug for project CPP_F401_PRESSURE_TEST ****
+make -j6 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/vortex/Desktop/stm32_cube_proj/CPP_F401_PRESSURE_TEST/MyCode/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "CPP_F401_PRESSURE_TEST.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vortex\Desktop\stm32_cube_proj\CPP_F401_PRESSURE_TEST\STM32F401CDUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CPP_F401_PRESSURE_TEST.map" -Wl,--gc-sections -static -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: CPP_F401_PRESSURE_TEST.elf
+ 
+arm-none-eabi-size   CPP_F401_PRESSURE_TEST.elf 
+arm-none-eabi-objdump -h -S  CPP_F401_PRESSURE_TEST.elf  > "CPP_F401_PRESSURE_TEST.list"
+arm-none-eabi-objcopy  -O binary  CPP_F401_PRESSURE_TEST.elf  "CPP_F401_PRESSURE_TEST.bin"
+   text	   data	    bss	    dec	    hex	filename
+  29844	    484	   1768	  32096	   7d60	CPP_F401_PRESSURE_TEST.elf
+Finished building: default.size.stdout
+ 
+Finished building: CPP_F401_PRESSURE_TEST.bin
+ 
+Finished building: CPP_F401_PRESSURE_TEST.list
+ 
+
+12:02:28 Build Finished. 0 errors, 0 warnings. (took 1s.440ms)
+

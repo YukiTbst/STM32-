@@ -1,0 +1,16 @@
+main.c:81:5:main	16	static
+main.c:157:6:SystemClock_Config	72	static
+main.c:195:13:MX_NVIC_Init	8	static
+main.c:207:13:MX_TIM3_Init	64	static
+main.c:278:13:MX_USART1_UART_Init	8	static
+main.c:309:13:MX_DMA_Init	16	static
+main.c:327:13:MX_GPIO_Init	40	static
+main.c:350:6:HAL_UART_RxCpltCallback	16	static
+main.c:357:6:USAR_UART_IDLECallback	24	static
+main.c:371:6:USER_UART_IRQHandler	24	static
+main.c:385:6:motor_control	16	static
+main.c:405:6:motor_stop	16	static
+main.c:413:6:waiting_rasp	24	static
+main.c:428:6:motor_init	16	static
+main.c:440:6:motor_command_process	16	static
+main.c:491:6:Error_Handler	4	static,ignoring_inline_asm

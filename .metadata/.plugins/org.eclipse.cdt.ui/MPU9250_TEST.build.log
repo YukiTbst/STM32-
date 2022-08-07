@@ -1,0 +1,67 @@
+20:37:13 **** Incremental Build of configuration Debug for project MPU9250_TEST ****
+make -j6 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HALIIC_WriteByteToSlave':
+../Core/Src/main.c:59:29: error: 'hi2c1' undeclared (first use in this function)
+   59 |   return HAL_I2C_Mem_Write(&hi2c1, I2C_Addr, reg, I2C_MEMADD_SIZE_8BIT, pData, 1, 100);
+      |                             ^~~~~
+../Core/Src/main.c:59:29: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'HALIIC_ReadByteFromSlave':
+../Core/Src/main.c:63:28: error: 'hi2c1' undeclared (first use in this function)
+   63 |   return HAL_I2C_Mem_Read(&hi2c1, I2C_Addr, reg, I2C_MEMADD_SIZE_8BIT, buf, 1, 100);
+      |                            ^~~~~
+../Core/Src/main.c: In function 'HALIIC_ReadMultByteFromSlave':
+../Core/Src/main.c:68:28: error: 'hi2c1' undeclared (first use in this function)
+   68 |   return HAL_I2C_Mem_Read(&hi2c1, dev, reg, I2C_MEMADD_SIZE_8BIT, data, length, 200);
+      |                            ^~~~~
+../Core/Src/main.c: In function 'HALIIC_WriteMultByteToSlave':
+../Core/Src/main.c:72:29: error: 'hi2c1' undeclared (first use in this function)
+   72 |   return HAL_I2C_Mem_Write(&hi2c1, dev, reg, I2C_MEMADD_SIZE_8BIT, data, length, 200);
+      |                             ^~~~~
+../Core/Src/main.c: In function 'MPU9250_Init':
+../Core/Src/main.c:77:2: warning: implicit declaration of function 'MPU9250_Check' [-Wimplicit-function-declaration]
+   77 |  MPU9250_Check(); //通过读取ID，检查MPU9250是否连接
+      |  ^~~~~~~~~~~~~
+../Core/Src/main.c:85:39: error: 'MPU6050_DLPF_BW_20' undeclared (first use in this function); did you mean 'MPU9250_DLPF_BW_20'?
+   85 |  MPU9250_WriteByte(MPU9250_RA_CONFIG, MPU6050_DLPF_BW_20);//设置�?螺的输出�?1kHZ,DLPF=20Hz
+      |                                       ^~~~~~~~~~~~~~~~~~
+      |                                       MPU9250_DLPF_BW_20
+../Core/Src/main.c: In function 'MPU9250_MagRead':
+../Core/Src/main.c:139:29: error: 'MPU9250Addr' undeclared (first use in this function)
+  139 |     HALIIC_WriteByteToSlave(MPU9250Addr,0x37,0x02);//turn on Bypass Mode
+      |                             ^~~~~~~~~~~
+../Core/Src/main.c:141:29: error: 'AK8963_MAG_ADDRESS' undeclared (first use in this function)
+  141 |     HALIIC_WriteByteToSlave(AK8963_MAG_ADDRESS,0x0A,0x11);
+      |                             ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'MPU9250_TempRead':
+../Core/Src/main.c:158:8: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+  158 |  short data;
+      |        ^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:231:10: warning: unused variable 'i2c_err' [-Wunused-variable]
+  231 |  uint8_t i2c_err;
+      |          ^~~~~~~
+../Core/Src/main.c:229:8: warning: unused variable 'text' [-Wunused-variable]
+  229 |   char text[100]="hello world";
+      |        ^~~~
+../Core/Src/main.c: In function 'HALIIC_WriteByteToSlave':
+../Core/Src/main.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+   60 | }
+      | ^
+../Core/Src/main.c: In function 'HALIIC_ReadByteFromSlave':
+../Core/Src/main.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+   64 | }
+      | ^
+../Core/Src/main.c: In function 'HALIIC_ReadMultByteFromSlave':
+../Core/Src/main.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+   69 | }
+      | ^
+../Core/Src/main.c: In function 'HALIIC_WriteMultByteToSlave':
+../Core/Src/main.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+   73 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j6 all" terminated with exit code 2. Build might be incomplete.
+
+20:37:13 Build Failed. 8 errors, 8 warnings. (took 358ms)
+

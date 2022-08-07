@@ -1,0 +1,20 @@
+13:37:08 **** Incremental Build of configuration Debug for project AS5048MagEncoder ****
+make -j6 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AS5048MagEncoder.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\vortex\Desktop\stm32_cube_proj\AS5048MagEncoder\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AS5048MagEncoder.map" -Wl,--gc-sections -static -u_printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AS5048MagEncoder.elf
+ 
+arm-none-eabi-size   AS5048MagEncoder.elf 
+arm-none-eabi-objdump -h -S  AS5048MagEncoder.elf  > "AS5048MagEncoder.list"
+arm-none-eabi-objcopy  -O binary  AS5048MagEncoder.elf  "AS5048MagEncoder.bin"
+   text	   data	    bss	    dec	    hex	filename
+  24900	    484	   1740	  27124	   69f4	AS5048MagEncoder.elf
+Finished building: default.size.stdout
+ 
+Finished building: AS5048MagEncoder.bin
+ 
+Finished building: AS5048MagEncoder.list
+ 
+
+13:37:12 Build Finished. 0 errors, 0 warnings. (took 4s.64ms)
+

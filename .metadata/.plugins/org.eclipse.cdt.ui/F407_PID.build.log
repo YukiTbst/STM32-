@@ -1,0 +1,46 @@
+21:00:46 **** Incremental Build of configuration Debug for project F407_PID ****
+make -j6 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/CMSIS/DSP/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:12: warning: unused variable 'length' [-Wunused-variable]
+  129 |     double length=0;
+      |            ^~~~~~
+../Core/Src/main.c:115:13: warning: unused variable 'norm' [-Wunused-variable]
+  115 |   float32_t norm=1;
+      |             ^~~~
+../Core/Src/main.c:114:10: warning: unused variable 'float_test' [-Wunused-variable]
+  114 |   double float_test=3.14159;
+      |          ^~~~~~~~~~
+../Core/Src/main.c:112:8: warning: unused variable 'text' [-Wunused-variable]
+  112 |   char text[100]="hello world";
+      |        ^~~~
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:300:33: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  300 |    HAL_UART_Receive_IT(&huart4, &Qs_origin, 8);
+      |                                 ^~~~~~~~~~
+      |                                 |
+      |                                 uint8_t (*)[8] {aka unsigned char (*)[8]}
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:726:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[8]' {aka 'unsigned char (*)[8]'}
+  726 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-g++ -o "F407_PID.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\vortex\Desktop\stm32_cube_proj\F407_PID\STM32F407ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_PID.map" -Wl,--gc-sections -static -L../Drivers/CMSIS/Lib/GCC -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: F407_PID.elf
+ 
+arm-none-eabi-size   F407_PID.elf 
+arm-none-eabi-objdump -h -S  F407_PID.elf  > "F407_PID.list"
+arm-none-eabi-objcopy  -O binary  F407_PID.elf  "F407_PID.bin"
+   text	   data	    bss	    dec	    hex	filename
+  25376	    484	   1764	  27624	   6be8	F407_PID.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_PID.bin
+ 
+Finished building: F407_PID.list
+ 
+
+21:00:47 Build Finished. 0 errors, 5 warnings. (took 1s.217ms)
+
